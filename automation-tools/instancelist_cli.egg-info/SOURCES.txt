@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+Automation/__init__.py
+Automation/__main__.py
+Automation/instancelist.py
+instancelist_cli.egg-info/PKG-INFO
+instancelist_cli.egg-info/SOURCES.txt
+instancelist_cli.egg-info/dependency_links.txt
+instancelist_cli.egg-info/entry_points.txt
+instancelist_cli.egg-info/requires.txt
+instancelist_cli.egg-info/top_level.txt
