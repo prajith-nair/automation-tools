@@ -72,7 +72,7 @@ secret= xxxxxxxx
 
 Execute below command to list instances with specific filter. 
 
-# instancelist-cli --filter dr 
+$instancelist-cli --filter dr 
 
 ```
 +---------------------+---------------------+--------------------------------------------------+--------------+------------+------------+---------------+--------------+--------------------------+---------+
@@ -87,7 +87,7 @@ Execute below command to list instances with specific filter.
 ```
 Execute below command to list instances using different profile.
 
-#instancelist-cli -p PM
+$instancelist-cli -p PM
 
 ```
 +------------------------------------------------------+---------------------+-----------------------------------------------------+----------------+------------+-----------------+---------------+-----------------------+--------------------------+---------+
