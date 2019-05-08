@@ -79,11 +79,4 @@ Execute below command to list instances with specific filter.
 
 
 
-+---------------------+---------------------+--------------------------------------------------+--------------+------------+------------+---------------+--------------+--------------------------+---------+
-|    Instance Name    |     Instance-id     |                       DNS                        |  Public IP   |    Size    |   Region   |   Private IP  |    VPC Id    |        Start Time        |  Status |
-+---------------------+---------------------+--------------------------------------------------+--------------+------------+------------+---------------+--------------+--------------------------+---------+
-| dr-one-node-primary | i-xxxx              | ec2-52-53-62-70.us-west-1.compute.amazonaws.com  | 52.xx.xx.xx  | m4.2xlarge | us-west-1b |  172.31.5.xx  | vpc-xx | 2019-05-08T04:38:46.000Z       | running |
-|   dr-setup-master   | i-xxx               | ec2-13-52-35-220.us-west-1.compute.amazonaws.com | 13.xx.xx.xx | m4.2xlarge | us-west-1b | 172.31.12.xx | vpc-xxx | 2019-05-07T05:43:46.000Z        | stopped |
-|    dr-setup-node2   | i-xx                | ec2-52-52-32-62.us-west-1.compute.amazonaws.com  | 52.xx.xx.xx  | m4.2xlarge | us-west-1b |  172.31.6.xx | vpc-xx | 2019-05-07T05:40:26.000Z        | stopped |
-|    dr-setup-node1   | i-xxx               | ec2-52-52-218-11.us-west-1.compute.amazonaws.com | 52.xx.xxx.xx | m4.2xlarge | us-west-1b | 172.31.12.xx | vpc-xxx | 2019-05-07T05:40:26.000Z       | stopped |
-+---------------------+---------------------+--------------------------------------------------+--------------+------------+------------+---------------+--------------+--------------------------+---------
+
