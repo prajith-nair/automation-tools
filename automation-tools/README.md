@@ -85,4 +85,17 @@ Execute below command to list instances with specific filter.
 +---------------------+---------------------+--------------------------------------------------+--------------+------------+------------+---------------+--------------+--------------------------+---------
 
 ```
+Execute below command to list instances using different profile.
+
+```
+ +------------------------------------------------------+---------------------+-----------------------------------------------------+----------------+------------+-----------------+---------------+-----------------------+--------------------------+---------+
+|                    Instance Name                     |     Instance-id     |                         DNS                         |   Public IP    |    Size    |      Region     |   Private IP  |         VPC Id        |        Start Time        |  Status |
++------------------------------------------------------+---------------------+-----------------------------------------------------+----------------+------------+-----------------+---------------+-----------------------+--------------------------+---------+
+|                 AnsibleMasterServer                  | i-xxx |      ec2-100-26-202-225.compute-1.amazonaws.com     | 100.xx.xxx.xxx |  t2.micro  |    us-east-1b   |   10.0.1.69   |      vpc-xxx     | 2019-03-18T07:52:18.000Z | running |
+|                Webservers-DemoPortal                 | i-xxx |      ec2-34-201-76-250.compute-1.amazonaws.com      | 34.xx.xxx.xxx  |  t2.micro  |    us-east-1b   |   10.0.0.26   |      vpc-xxx     | 2018-02-13T11:06:16.000Z | running |
+|                  K8S-Master-arshad                   | i-xxx |       ec2-52-0-148-123.compute-1.amazonaws.com      |  52.x.xxx.xxx  | t2.medium  |    us-east-1b   |   10.0.1.45   |      vpc-xxx     | 2018-12-11T13:40:45.000Z | running |
+|                   K8S-Node1-arshad                   | i-xxx |      ec2-52-203-186-51.compute-1.amazonaws.com      | 52.xxx.xx.xx  | t2.medium  |    us-east-1b   |   10.0.1.27   |      vpc-xxxx     | 2018-12-11T13:40:45.000Z | running |
+|                   K8S-Node2-arshad                   | i-xx |      ec2-54-87-161-154.compute-1.amazonaws.com      | 54.xx.xx.xx  | t2.medium  |    us-east-1b   |   10.0.1.127  |      vpc-xxxx     | 2018-12-11T13:40:45.000Z | running |
+|                      Test-Demo                       | i-xxx |      ec2-35-172-105-241.compute-1.amazonaws.com     | 35.xxx.xx.xx |  t2.small  |    us-east-1b   |   10.0.0.168  |      vpc-xxx     | 2019-05-02T16:31:06.000Z | stopped |
+```
 
