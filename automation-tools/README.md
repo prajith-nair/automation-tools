@@ -72,7 +72,7 @@ secret= xxxxxxxx
 
 Execute below command to list instances with specific filter. 
 
-instancelist-cli --filter dr 
+# instancelist-cli --filter dr 
 
 ```
 +---------------------+---------------------+--------------------------------------------------+--------------+------------+------------+---------------+--------------+--------------------------+---------+
