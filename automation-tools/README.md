@@ -78,10 +78,10 @@ $instancelist-cli --filter dr
 +---------------------+---------------------+--------------------------------------------------+--------------+------------+------------+---------------+--------------+--------------------------+---------+
 |    Instance Name    |     Instance-id     |                       DNS                        |  Public IP   |    Size    |   Region   |   Private IP  |    VPC Id    |        Start Time        |  Status |
 +---------------------+---------------------+--------------------------------------------------+--------------+------------+------------+---------------+--------------+--------------------------+---------+
-| dr-one-node-primary | i-xxxx              | ec2-52-53-62-70.us-west-1.compute.amazonaws.com  | 52.xx.xx.xx  | m4.2xlarge | us-west-1b |  172.31.5.xx  | vpc-xx | 2019-05-08T04:38:46.000Z       | running |
-|   dr-setup-master   | i-xxx               | ec2-13-52-35-220.us-west-1.compute.amazonaws.com | 13.xx.xx.xx | m4.2xlarge | us-west-1b | 172.31.12.xx | vpc-xxx | 2019-05-07T05:43:46.000Z        | stopped |
-|    dr-setup-node2   | i-xx                | ec2-52-52-32-62.us-west-1.compute.amazonaws.com  | 52.xx.xx.xx  | m4.2xlarge | us-west-1b |  172.31.6.xx | vpc-xx | 2019-05-07T05:40:26.000Z        | stopped |
-|    dr-setup-node1   | i-xxx               | ec2-52-52-218-11.us-west-1.compute.amazonaws.com | 52.xx.xxx.xx | m4.2xlarge | us-west-1b | 172.31.12.xx | vpc-xxx | 2019-05-07T05:40:26.000Z       | stopped |
+| dr-one-node-primary | i-xxxx              | ec2-52-xx-xx-xx.us-west-1.compute.amazonaws.com  | 52.xx.xx.xx  | m4.2xlarge | us-west-1b |  172.31.5.xx  | vpc-xx | 2019-05-08T04:38:46.000Z       | running |
+|   dr-setup-master   | i-xxx               | ec2-13-xx-xx-xx.us-west-1.compute.amazonaws.com | 13.xx.xx.xx | m4.2xlarge | us-west-1b | 172.31.12.xx | vpc-xxx | 2019-05-07T05:43:46.000Z        | stopped |
+|    dr-setup-node2   | i-xx                | ec2-52-xx-xx-xx.us-west-1.compute.amazonaws.com  | 52.xx.xx.xx  | m4.2xlarge | us-west-1b |  172.31.6.xx | vpc-xx | 2019-05-07T05:40:26.000Z        | stopped |
+|    dr-setup-node1   | i-xxx               | ec2-52-xx-xx-xx.us-west-1.compute.amazonaws.com | 52.xx.xxx.xx | m4.2xlarge | us-west-1b | 172.31.12.xx | vpc-xxx | 2019-05-07T05:40:26.000Z       | stopped |
 +---------------------+---------------------+--------------------------------------------------+--------------+------------+------------+---------------+--------------+--------------------------+---------
 
 ```
@@ -93,12 +93,12 @@ $instancelist-cli -p PM
 +------------------------------------------------------+---------------------+-----------------------------------------------------+----------------+------------+-----------------+---------------+-----------------------+--------------------------+---------+
 |                    Instance Name                     |     Instance-id     |                         DNS                         |   Public IP    |    Size    |      Region     |   Private IP  |         VPC Id        |        Start Time        |  Status |
 +------------------------------------------------------+---------------------+-----------------------------------------------------+----------------+------------+-----------------+---------------+-----------------------+--------------------------+
-|               AnsibleMasterServer                    | i-xxx 			     |  ec2-100-26-202-225.compute-1.amazonaws.com     | 100.xx.xxx.xxx |  t2.micro  |    us-east-1b   |   10.0.1.69   |      vpc-xxx          | 2019-03-18T07:52:18.000Z | running |
-|                Webservers-DemoPortal                 | i-xxx               |      ec2-34-201-76-250.compute-1.amazonaws.com      | 34.xx.xxx.xxx  |  t2.micro  |    us-east-1b   |   10.0.0.26   |      vpc-xxx          | 2018-02-13T11:06:16.000Z | running |
-|                  K8S-Master                          | i-xxx               |       ec2-52-0-148-123.compute-1.amazonaws.com      |  52.x.xxx.xxx  | t2.medium  |    us-east-1b   |   10.0.1.45   |      vpc-xxx          | 2018-12-11T13:40:45.000Z | running |
-|                   K8S-Node1                          | i-xxx               |      ec2-52-203-186-51.compute-1.amazonaws.com      | 52.xxx.xx.xx   | t2.medium  |    us-east-1b   |   10.0.1.27   |      vpc-xxxx         | 2018-12-11T13:40:45.000Z | running |
-|                   K8S-Node2                          | i-xx                |      ec2-54-87-161-154.compute-1.amazonaws.com      | 54.xx.xx.xx    | t2.medium  |    us-east-1b   |   10.0.1.127  |      vpc-xxxx         | 2018-12-11T13:40:45.000Z | running |
-|                      Test-Demo                       | i-xxx               |      ec2-35-172-105-241.compute-1.amazonaws.com     | 35.xxx.xx.xx   |  t2.small  |    us-east-1b   |   10.0.0.168  |      vpc-xxx          | 2019-05-02T16:31:06.000Z | stopped |
+|               AnsibleMasterServer                    | i-xxx 			     |  ec2-100-xx-xx-xx.compute-1.amazonaws.com     | 100.xx.xxx.xxx |  t2.micro  |    us-east-1b   |   10.0.1.69   |      vpc-xxx          | 2019-03-18T07:52:18.000Z | running |
+|                Webservers-DemoPortal                 | i-xxx               |      ec2-34-xx-xx-xx.compute-1.amazonaws.com      | 34.xx.xxx.xxx  |  t2.micro  |    us-east-1b   |   10.0.0.26   |      vpc-xxx          | 2018-02-13T11:06:16.000Z | running |
+|                  K8S-Master                          | i-xxx               |       ec2-52-x-xx-xx.compute-1.amazonaws.com      |  52.x.xxx.xxx  | t2.medium  |    us-east-1b   |   10.0.1.45   |      vpc-xxx          | 2018-12-11T13:40:45.000Z | running |
+|                   K8S-Node1                          | i-xxx               |      ec2-52-xx-xx-xx.compute-1.amazonaws.com      | 52.xxx.xx.xx   | t2.medium  |    us-east-1b   |   10.0.1.27   |      vpc-xxxx         | 2018-12-11T13:40:45.000Z | running |
+|                   K8S-Node2                          | i-xx                |      ec2-54-xx-xx-xx.compute-1.amazonaws.com      | 54.xx.xx.xx    | t2.medium  |    us-east-1b   |   10.0.1.127  |      vpc-xxxx         | 2018-12-11T13:40:45.000Z | running |
+|                      Test-Demo                       | i-xxx               |      ec2-35-xx-xx-xx.compute-1.amazonaws.com     | 35.xxx.xx.xx   |  t2.small  |    us-east-1b   |   10.0.0.168  |      vpc-xxx          | 2019-05-02T16:31:06.000Z | stopped |
 
 ```
 
