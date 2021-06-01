@@ -1,1 +1,12 @@
 
+Step 1 $ git clone git@github.com:prajith-nair/automation-tools.git 
+Step 2 $ python3 setup.py install 
+$ instancelist-cli --help
+usage: instancelist-cli [-h] [-p PROFILE] [-f FILTER]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -p PROFILE, --profile PROFILE
+                        Configuration profile
+  -f FILTER, --filter FILTER
+                        Amazon EC2 API filter to limit the result returned. (Example: --filter running)
