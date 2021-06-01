@@ -11,7 +11,7 @@ import argparse
 import boto.ec2
 import boto.ec2.cloudwatch
 import boto
-import ConfigParser
+import configparser
 import os
 import sys,getopt
 from os.path import expanduser
@@ -58,7 +58,7 @@ colors = {
 def main():
     opts = vars(parse_args())
     region = None
-    config = ConfigParser.ConfigParser()
+    config = configparser.ConfigParser()
     config.read(setup_config())
 
     profile = opts['profile']
