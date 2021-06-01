@@ -74,6 +74,7 @@ def main():
             conn = boto.ec2.connection.EC2Connection(aws_key, aws_secret, region=r)
             instances = get_ec2_instances(conn, filters)
         except Exception as e :
+            message = 'Unable to establish connection'
             print ("Error %s" % e.message)
             pass
     print (colors["GREEN"], "\n", tbl, colors["END"])
@@ -87,8 +88,8 @@ def get_ec2_instances(conn, filter):
     reservations = conn.get_all_instances()
     for reservation in reservations:
         for i in reservation.instances:
-            if filter in ""+optional([i.tags['Name'] if i.tags.has_key('Name') else '',i.id,i.public_dns_name,i.ip_address,i.instance_type,i.placement,i.private_ip_address,i.vpc_id,i.launch_time,i.state]):
-                tbl.add_row([i.tags['Name'] if i.tags.has_key('Name') else '',i.id,i.public_dns_name,i.ip_address,i.instance_type,i.placement,i.private_ip_address,i.vpc_id,i.launch_time,i.state])
+            if filter in ""+optional([i.tags['Name'] if 'Name' in tags return tags['Name'] else return '',i.id,i.public_dns_name,i.ip_address,i.instance_type,i.placement,i.private_ip_address,i.vpc_id,i.launch_time,i.state]):
+                tbl.add_row([i.tags['Name'] if 'Name' in tags return tags['Name'] else return '',i.id,i.public_dns_name,i.ip_address,i.instance_type,i.placement,i.private_ip_address,i.vpc_id,i.launch_time,i.state])
 
 
 def optional(a):
