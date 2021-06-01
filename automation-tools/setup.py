@@ -29,7 +29,6 @@ setup(
     description = "Ec2 instance listing Utility",
     long_description = long_descr,
     author = "Prajith Nair",
-    author_email = "prajith@appcito.com",
     url = "",
     install_requires = [
         "boto>=2.34.0",
