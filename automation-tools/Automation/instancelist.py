@@ -74,9 +74,9 @@ def main():
             conn = boto.ec2.connection.EC2Connection(aws_key, aws_secret, region=r)
             instances = get_ec2_instances(conn, filters)
         except Exception as e :
-            print "Error %s" % e.message
+            print ("Error %s" % e.message)
             pass
-    print colors["GREEN"], "\n", tbl, colors["END"]
+    print (colors["GREEN"], "\n", tbl, colors["END"])
 
 
 
@@ -110,6 +110,5 @@ if __name__ == '__main__':
     try:
         main()
     except KeyboardInterrupt:
-        print 'Interrupted'
+        print ('Interrupted')
         pass
-
